@@ -26,7 +26,7 @@
 
 /* Swiper 슬라이드 이미지 스타일 */
 .addPost .swiper-slide img {
-  width: 200px; /* 이미지 너비 */
-  height: 200px; /* 이미지 높이 */
+  width: 100px; /* 이미지 너비 */
+  height: 100px; /* 이미지 높이 */
   object-fit: cover; /* 비율 유지하면서 영역을 채움 */
 }

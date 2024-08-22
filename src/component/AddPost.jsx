@@ -101,7 +101,7 @@ const AddPost = ({ onSubmit, postLength, setAddPost }) => {
   };
 
   return (
-    <div className="fixed w-[500px] p-[15px] bg-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 shadow-md rounded-lg">
+    <div className="absolute w-[500px] p-[15px] bg-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 shadow-md rounded-lg">
       <div className="mb-[10px] addPost">
         <div className='w-[50px] aspect-square flex justify-center items-center rounded-lg border-[2px] border-[#275CB3] cursor-pointer mb-[10px]'>
           <label className='pt-[5px] cursor-pointer' htmlFor='imgUpload'>
@@ -120,15 +120,15 @@ const AddPost = ({ onSubmit, postLength, setAddPost }) => {
         />
         <Swiper
           spaceBetween={10}
-          slidesPerView={2.2}
+          slidesPerView={4.2}
           navigation
           modules={[Navigation]}
         >
           {postData.image.map((imageUrl, index) => (
             <SwiperSlide key={index} className="relative">
-              <img src={imageUrl} alt="미리보기 이미지" className="w-[200px] h-[200px] object-cover" />
+              <img src={imageUrl} alt="미리보기 이미지" className="w-[50px] h-[50px] overflow-hidden object-cover" />
               <button
-                className="absolute top-[3px] right-[10px] bg-[#333]/80 text-white w-[20px] aspect-square flex justify-center items-center rounded-full z-10"
+                className="absolute top-[0px] right-[0px] bg-[#333]/80 text-white w-[20px] aspect-square flex justify-center items-center rounded-full z-10"
                 onClick={() => handleImageDelete(index)}
               >
                 <p>X</p>
