@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import './LikeRecent.css';
 import { Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
-import { Status, usestatusContext } from '../Context/StatusContext';  // Import the context
+import { Status } from '../Context/StatusContext';  // Import the context
 
 export default function LikeRecent({ onPostClick }) {  // 받아온 핸들러 사용
   const { likedPosts, recentPosts } = Status();  // Use the context
