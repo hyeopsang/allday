@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { AppRouter } from './AppRouter';
+import { Provider } from './Context/StatusContext';  // Import the context provider
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider>
+      <RouterProvider router={AppRouter} />
+    </Provider>
   );
-}
+};
 
 export default App;
+

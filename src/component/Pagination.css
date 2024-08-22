@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .pagination li {
+    list-style: none;
+    margin: 0 5px; /* 기본 간격 */
+  }
+  
+  .pagination li.previous,
+  .pagination li.next {
+    margin: 0 20px; /* 이전과 다음 버튼 간격 */
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #275CB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 10px; 
+  }
+  
+  .pagination .active a {
+    font-weight: 800;
+    color: #fff;
+    filter: drop-shadow(0.5px 0.5px 2px rgba(0, 0, 0, 0.2));
+  }
+  

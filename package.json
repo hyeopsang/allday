@@ -6,9 +6,21 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.0",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "firebase": "^10.12.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-paginate": "^8.2.0",
+    "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
+    "swiper": "^11.1.5",
+    "typescript": "^5.5.4",
+    "uuid": "^10.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +46,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.4.19",
+    "css-loader": "^7.1.2",
+    "postcss": "^8.4.39",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "proxy": "http://localhost:3000",
+  "homepage": "https://github.com/hyeopsang/allday.git"
+
 }
